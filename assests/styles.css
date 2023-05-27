@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-  }
+    background-color: rgb(199, 238, 238);
+    }
   
   .container {
     max-width: 600px;
@@ -27,6 +28,7 @@ body {
   #timer {
     font-size: 18px;
     padding-right: 0%;
+    
   }
   
   #question {
@@ -54,5 +56,14 @@ body {
   
   #save-btn {
     margin-top: 10px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  h1 { 
+       margin: 2%;
+       color: blue;
+       
   }
   

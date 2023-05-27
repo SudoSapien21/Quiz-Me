@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assests/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="./assests/styles.css">
 
 </head>
-<body>   
-    <div id="quiz-container">
-        <a href="./assests/highscore.html" id="vhighscore"> View Highscore</a>
-        <h2 id="timer">Timer: <span id="time-left"></span></h2>
-        <h3 id="question">Question goes here</h3>
-        <ul id="options">
-          <li><input type="radio" name="answer" value="option1">Option 1</li>
-          <li><input type="radio" name="answer" value="option2">Option 2</li>
-          <li><input type="radio" name="answer" value="option3">Option 3</li>
-          <li><input type="radio" name="answer" value="option4">Option 4</li>
-        </ul>
-        <button id="submit-btn">Submit</button>
-        <div id="result"></div>
-        <input type="text" id="initials" placeholder="Enter your initials">
-        <button id="save-btn">Save</button>
-      </div>
-    <script src="./assests/script.js"></script>
-    
+
+<body>
+  <section id="startingPage" class="screen" style="display: block">
+    <h1 style="text-align: center;"> Hi Welcome to Coding Quiz</h1>
+    <p style="text-align: center; font-weight: bold;"> 
+          
+      <br>
+      During this quiz you will answer a series of coding questions; when you answer wrong 10 seconds
+       will deduct from your timer.
+      <br>
+      GOOD LUCK & HAPPY CODING 
+    </p>
+    <button id="startGame" style="display: block; margin: 0 auto;">Start Game</button>
+  </section>
+  <div id="quizContainer" class="hide">
+    <a href="./assests/highscore.html" id="highS"> View Highscore</a>
+    <h2 id="timer">Timer: <span id="time-left"></span></h2>
+    <h3 id="question">Question goes here</h3>
+    <ul id="options">
+      <li><input type="radio" name="answer" value="option1">Option 1</li>
+      <li><input type="radio" name="answer" value="option2">Option 2</li>
+      <li><input type="radio" name="answer" value="option3">Option 3</li>
+      <li><input type="radio" name="answer" value="option4">Option 4</li>
+    </ul>
+    <button id="submit-btn">Submit</button>
+    <div id="result"></div>
+    <input type="text" id="initials" placeholder="Enter your initials">
+    <button id="save-btn">Save</button>
+  </div>
+  <script src="./assests/script.js"></script>
+
 </body>
+
 </html>

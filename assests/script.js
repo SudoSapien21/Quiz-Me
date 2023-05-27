@@ -1,29 +1,29 @@
 //Defining my questions and answers
 const quiz = [
   {
-    question: "Question 1?",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+    question: "APIs allow web developers to?",
+    options: ["create dynamic, interactive web applications.", "define elements like paragraphs", "Run git bash", "style index.html"],
     answer: 0
   },
   {
-    question: "Question 2?",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+    question: "What does HTML stand for?",
+    options: ["Home Text Memory Language", "Hit The Mother Load", "Hypertext Markup Language", "Hypertext Markup Layout"],
     answer: 2
   },
   {
-    question: "Question 3?",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    answer: 2
+    question: "Which tag has the smallest font?",
+    options: ["<h1>", "<h4>", "<h3>", "<h2>"],
+    answer: 1
   },
   {
-    question: "Question 4?",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    answer: 2
+    question: "What are boolean attributes in HTML?",
+    options: ["an attribute that can be either true or false", "an attribute that can create an image", "an attribute that can change the background color", "None of the above"],
+    answer: 0
   },
   {
-    question: "Question 5?",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    answer: 2
+    question: "All properties and methods of JSON are static; what other object is static?",
+    options: ["boolean", "MATH", "Set", "Weakset"],
+    answer: 1
   },
 
 ];
@@ -39,6 +39,7 @@ const submitButton = document.getElementById("submit-btn");
 const resultElement = document.getElementById("result");
 const initialsInput = document.getElementById("initials");
 const saveButton = document.getElementById("save-btn");
+const startButton = document.getElementById("startGame");
 
 // Display question and options
 function displayQuestion() {
@@ -118,7 +119,16 @@ function saveHighScore() {
 // Event listeners
 submitButton.addEventListener("click", submitAnswer);
 saveButton.addEventListener("click", saveHighScore);
+startButton.addEventListener("click", startGame);
 
 // Start the quiz
 displayQuestion();
 startTimer();
+function startGame() {
+  const startingPage = document.getElementById("startingPage");
+  const quizContainer = document.getElementById("quizContainer");
+
+  startingPage.style.display = "none";
+  quizContainer.classList.remove("hide");  
+  
+}
